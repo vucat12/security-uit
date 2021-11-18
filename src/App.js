@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from 'react';
+var md5 = require('md5');
 
 function App() {
+  useEffect(() => {
+    console.log("=====", md5("message"));
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
