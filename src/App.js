@@ -24,7 +24,7 @@ function App() {
             <label>Nội dung giao dịch:</label>
             <p>Chuyển tiền thanh toán tiền máy tính</p>
           </div>
-          <button onClick={() => { setIsShow(true); }}>Thanh toán</button>
+          <button onClick={() => { setIsShow(!isShow); }}>Thanh toán</button>
         </div>
         <div className="card-transfer">
           {isShow ?
